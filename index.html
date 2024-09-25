@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字符串花朵</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            margin: 0;
+        }
+        .flower {
+            font-size: 24px;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            animation: rotate 10s linear infinite;
+        }
+        .petal {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: 0 -100px;
+            transform: rotate(0deg) translateX(-50%);
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flower">
+        <div class="petal" style="transform: rotate(0deg) translateX(-50%);">🌸</div>
+        <div class="petal" style="transform: rotate(45deg) translateX(-50%);">🌸</div>
+        <div class="petal" style="transform: rotate(90deg) translateX(-50%);">🌸</div>
+        <div class="petal" style="transform: rotate(135deg) translateX(-50%);">🌸</div>
+        <div class="petal" style="transform: rotate(180deg) translateX(-50%);">🌸</div>
+        <div class="petal" style="transform: rotate(225deg) translateX(-50%);">🌸</div>
+        <div class="petal" style="transform: rotate(270deg) translateX(-50%);">🌸</div>
+        <div class="petal" style="transform: rotate(315deg) translateX(-50%);">🌸</div>
+    </div>
+</body>
+</html>
